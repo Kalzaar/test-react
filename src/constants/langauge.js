@@ -1,0 +1,1 @@
+export const WELCOME_TEXT = "Welcome to the story of my first creation";

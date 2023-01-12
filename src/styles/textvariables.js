@@ -1,0 +1,2 @@
+export const testText = "For a while I worked in the health industry aspiring to become a physical therapist. After a long time training I started to become frineds with and talk to a lot of the therapists I worked with. This made me realize that I was not in the right career path for my future and wanted to change it up. That is when I learned about Codecademy and decided to self teach myself into making this website!"; 
+

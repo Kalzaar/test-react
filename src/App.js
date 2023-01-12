@@ -1,15 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home/Home'
+import SecondApp from './components/Home/Home'
+import Header from './components/Header/Header';
+import NavBar from './components/NavBar/NavBar';
+import SideBar from './components/SideBar/SideBar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Testing home components</h1>
+    <div>
+      <Header />
+      <NavBar />
+      <div className='row'>
+        <SideBar />
+        <Home />
+      </div>
+      
 
-      <Home testProp='Trevor' />
     </div>
   );
 }
+
+
+
 
 export default App;

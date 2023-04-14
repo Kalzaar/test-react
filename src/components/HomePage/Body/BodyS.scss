@@ -1,0 +1,22 @@
+@import '../../../styles/variables.scss';
+
+.Body {
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+
+    p {
+        color: $site-color;
+        z-index: 1;
+        word-spacing: 5px;
+        margin-bottom: 50px;
+        line-height: 1.5em;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        a {
+            color: $fail-color;
+        }
+    }
+}

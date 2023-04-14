@@ -1,1 +1,17 @@
 export const WELCOME_TEXT = "Welcome to the story of my first creation";
+export const DAILY_BLOG = "The current project I finished is shown right beneath this informational. I tried to create boxes using flex to not only look amenable to the eye, but also easily have the links to the wikipedia page underneath!";
+export const TITLE_2 = "Color Informational";
+export const COLORS = "Learn more at Wikipedia by clicking the names of the colors!";
+export const RED = 'Red';
+export const BLUE = 'Blue';
+export const PURPLE = 'Purple';
+export const PINK = 'Pink';
+export const GREEN = 'Green';
+export const DAILYB = 'Daily Blog';
+export const ORANGE = 'Orange';
+export const YELLOW = 'Yellow';
+export const MAGENTA = 'Magenta';
+export const SILVER = 'Silver';
+export const GOLD = 'Gold';
+export const CSSWELCOME = 'Welcome to my CSS page!'
+export const CSSWELCOME2 = 'Hopefully you like my CSS animation projects below, some will obviously be better than others, however I hope they improve over time!'

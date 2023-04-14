@@ -1,0 +1,261 @@
+@import '//public/Bunny.svg';
+
+.CSSPage {
+    text-align: center;
+
+    h1 {
+        font-size: 40px;
+        line-height: 2.0em;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+    .spacing {
+        padding-top: 15px;
+    }
+
+    .animation {
+        margin-left: 5%;
+        width: 90%;
+        height: 500px;
+        border: 1px solid black;
+        margin-top: 25px;
+    }
+
+    .dice-background {
+        background-color: black;
+    }
+
+    .project_1 {
+        background-image: url('https://www.duvallandscape.com/zupload/library/79/-83-2048x1070-0.jpg?ztv=20180305122918');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+	    background-position: center center;
+        display: flex;
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rabbit {
+        background-image: '//public/Bunny.svg';
+        background-size: auto 100%;
+        width: 88px;
+        height: 125px;
+        will-change: background-position;
+        
+        animation-name: hop-cycle;
+        animation-timing-function: steps(6);
+        animation-iteration-count: infinite;
+    
+        &--one {
+            animation-duration: 1s;
+            animation-delay: -0.5s;		
+        }
+    }
+
+    .rabbit-container {
+        position: absolute;
+        top: 20%;
+        left: -10%;
+        transform: scale(0) translateX(-10vw);
+        will-change: transform;
+        
+        animation-name: hop-right-one;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        
+        &--one {
+            animation-duration: 15s;
+            animation-delay: 0;
+        }
+    }
+
+    @keyframes hop-cycle {
+	
+        100% {
+            background-position: 0px 0;
+        }
+        
+    }
+    
+    @keyframes hop-right-one {
+        
+        0% {
+            transform: scale(0.3) translateX(-10vw);
+        }
+        
+        10% {
+            transform: translateY(2vh) translateX(10vw) scale(0.4);
+        }
+        
+        20% {
+            transform: translateY(0vh) translateX(30vw) scale(0.5);
+        }
+        
+        30% {
+            transform: translateY(4vh) translateX(50vw) scale(0.6);
+        }
+        
+        40% {
+            transform: translateY(2vh) translateX(70vw) scale(0.6);
+        }
+        
+        50% {
+            transform: translateY(0vh) translateX(90vw) scale(0.6);
+        }
+        
+        60% {
+            transform: translateY(0vh) translateX(110vw) scale(0.6);
+        }
+        
+        100% {
+            transform: translateY(0vh) translateX(110vw) scale(0.6);
+        }
+        
+    }
+}
+
+.project_2 {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    perspective: 1000px;
+    perspective-origin: center;
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: white;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: rotate 3s linear infinite;
+        perspective: 10000px;
+    }
+
+    @keyframes rotate {
+        from {
+          transform: rotate3d(0, 1, 0, 0deg);
+        }
+        to {
+          transform: rotate3d(0, 1, 1, 360deg);
+        }
+    } 
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid white;
+        position: relative;
+        animation: rotate 3s linear infinite;
+      }
+      
+      @keyframes rotate {
+        from {
+          transform: rotate3d(0, 1, 0, 0deg);
+        }
+        to {
+          transform: rotate3d(1, 1, 1, 360deg);
+        }
+      }
+
+      .cube-container {
+        perspective: 800px;
+        perspective-origin: center;
+       
+        
+      }
+      
+      .cube {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        transform: rotateX(45deg) rotateY(45deg);
+        animation: rotate 3s linear infinite;
+      }
+      
+      .face {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        line-height: 200px;
+      }
+      
+      .front {
+        transform: translateZ(100px);
+        background-color: red;
+      }
+      
+      .back {
+        transform: rotateY(180deg) translateZ(100px);
+        background-color: blue;
+      }
+      
+      .top {
+        transform: rotateX(90deg) translateZ(100px);
+        background-color: green;
+      }
+      
+      .bottom {
+        transform: rotateX(-90deg) translateZ(100px);
+        background-color: yellow;
+      }
+      
+      .left {
+        transform: rotateY(-90deg) translateZ(100px);
+        background-color: orange;
+      }
+      
+      .right {
+        transform: rotateY(90deg) translateZ(100px);
+        background-color: purple;
+      }
+      
+      @keyframes rotate {
+        from {
+          transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        to {
+          transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+        }
+      }
+      
+}
+
+
+
+// .rabbit {
+//     position: absolute;
+//     left: -50px;
+    
+//     animation: hop 4s ease-in-out infinite;
+//     width: 50px;
+//     height: 50px;
+//   }
+  
+//   @keyframes hop {
+//     0% {
+//       transform: translateX(0);
+//     }
+//     50% {
+//       transform: translateX(400px) rotate(45deg);
+//     }
+//     100% {
+//       transform: translateX(800px) ;
+//     }
+//   }

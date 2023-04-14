@@ -3,14 +3,20 @@
     border-bottom: 1px;
     padding-bottom: 1px;
     border-top: 0px;
-    margin-top: 30px;
+    margin-top: 0px;
     padding-top: 0px;
+    background-color: gray;
+
+    .background {
+        background-color: gray;
+    }    
     h1 {
         font-family: fantasy, sans-serif;
         color: black;
         font-size: 50pt;
         border-bottom: 1px;
         margin-bottom: 1px;
+        padding-top: 30px;
         padding-bottom: 1px;
         
     }
